@@ -1,8 +1,22 @@
 let compass = 0;
 let dir = 1;
 let rad = 0.1;
+let choice = 0;
 input.onButtonPressed(Button.A, function() {
     finch.stopMotors()
+})
+input.onGesture(Gesture.Shake, function() {
+    
+    basic.pause(1000);
+    if (choice = 0){
+
+    }else if (choice=1){
+        Circle();
+    } else if (choice = 2) {
+
+    } else if (choice = 3) {
+
+    }
 })
 finch.startFinch()
 finch.setMove(MoveDir.Forward, 10, 50)
@@ -35,6 +49,22 @@ function Square() {
         finch.setTurn(RLDir.Right, 90, 50)
     }
 }
+function hexagon(){
+
+    for (let i = 0; i < 5; i++) {
+        
+        while (finch.getDistance()<10) {
+            
+            finch.startMotors(100, 100);
+
+        }
+
+        finch.stopMotors()
+        finch.setTurn(RLDir.Right, 60, 100)
+    }
+}
+
+
 function Triangle () {
  finch.setMove(MoveDir.Forward, 10, 50)
 finch.setTurn(RLDir.Right, 120, 50)
