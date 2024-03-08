@@ -35,3 +35,12 @@ function Square() {
         finch.setTurn(RLDir.Right, 90, 50)
     }
 }
+function Triangle () {
+ finch.setMove(MoveDir.Forward, 10, 50)
+finch.setTurn(RLDir.Right, 120, 50)
+finch.setMove(MoveDir.Forward, 10, 50)
+finch.setTurn(RLDir.Right, 120, 50)
+finch.setMove(MoveDir.Forward, 10, 50)
+finch.setTurn(RLDir.Right, 120, 50)
+}
+Triangle ();
