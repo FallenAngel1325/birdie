@@ -7,7 +7,9 @@ input.onButtonPressed(Button.A, function() {
 })
 input.onButtonPressed(Button.B, function () {
     choice = choice+1;
-    
+    if (choice>3){
+        choice = 0;
+    }
     basic.showNumber(choice);
 })
 
