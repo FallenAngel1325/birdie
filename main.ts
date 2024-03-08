@@ -5,17 +5,23 @@ let choice = 0;
 input.onButtonPressed(Button.A, function() {
     finch.stopMotors()
 })
+input.onButtonPressed(Button.B, function () {
+    choice = choice+1;
+    
+    basic.showNumber(choice);
+})
+
 input.onGesture(Gesture.Shake, function() {
     
     basic.pause(1000);
     if (choice = 0){
-
+        hexagon();
     }else if (choice=1){
         Circle();
     } else if (choice = 2) {
-
+        Square();
     } else if (choice = 3) {
-
+        Triangle();
     }
 })
 finch.startFinch()
