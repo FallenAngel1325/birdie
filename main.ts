@@ -1,7 +1,9 @@
 let compass = 0;
 let dir = 1;
 let rad = 50;
-
+input.onButtonPressed(Button.A, function() {
+    finch.stopMotors()
+})
 finch.startFinch()
 finch.setMove(MoveDir.Forward, 10, 50)
 basic.forever(function () {
