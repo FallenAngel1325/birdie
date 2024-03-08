@@ -18,7 +18,7 @@ input.onGesture(Gesture.Shake, function() {
     basic.pause(1000);
     if (choice = 0){
         hexagon();
-    }else if (choice=1){
+    }else if (choice = 1){
         Circle();
     } else if (choice = 2) {
         Square();
