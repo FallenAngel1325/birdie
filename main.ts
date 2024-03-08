@@ -18,12 +18,9 @@ function Circle() {
         finch.startMotors(100 * rad, 100);
     }
 
-    basic.pause(300)
-    loops.everyInterval(1, function () {
-        if (compass = finch.getFinchCompass()) {
-            finch.stopMotors()
-        }
-    });
+    basic.pause(3000)
+    
+    finch.stopMotors()
 
 }
 function checkCompass() {
