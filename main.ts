@@ -1,6 +1,6 @@
 let compass = 0;
 let dir = 1;
-let rad = 50;
+let rad = 0.1;
 input.onButtonPressed(Button.A, function() {
     finch.stopMotors()
 })
@@ -28,3 +28,4 @@ function checkCompass() {
         finch.stopMotors()
     }
 }
+Circle();
