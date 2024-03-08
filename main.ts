@@ -27,3 +27,11 @@ function checkCompass() {
     
 }
 Circle();
+
+Square();
+function Square() {
+    for (let i = 0; i < 5; i++) {
+        finch.setMove(MoveDir.Forward, 10, 50)
+        finch.setTurn(RLDir.Right, 90, 50)
+    }
+}
