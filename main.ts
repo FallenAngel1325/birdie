@@ -20,12 +20,13 @@ function Circle() {
 
     basic.pause(100)
     loops.everyInterval(1, function () {
+        if (compass = finch.getFinchCompass()) {
+            finch.stopMotors()
+        }
     });
 
 }
 function checkCompass() {
-    if (compass = finch.getFinchCompass()) {
-        finch.stopMotors()
-    }
+    
 }
 Circle();
