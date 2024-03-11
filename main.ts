@@ -15,20 +15,10 @@ input.onButtonPressed(Button.B, function () {
 
 input.onGesture(Gesture.Shake, function() {
     
-    basic.pause(1000);
-    if (choice = 0){
-        Hexagon();
-    }else if (choice = 1){
-        Circle();
-    } else if (choice = 2) {
-        Square();
-    } else if (choice = 3) {
-        Triangle();
-    } else if (choice = 1) {
-        Rectangle();
-    }
+    Square();
 })
 finch.startFinch()
+finch.getLight(RLDir.Right)
 finch.setMove(MoveDir.Forward, 10, 50)
 basic.forever(function () {
     basic.showIcon(IconNames.Yes)
@@ -92,4 +82,5 @@ function Rectangle() {
     finch.setTurn(RLDir.Right, 90, 50)
     finch.setMove(MoveDir.Forward, 5, 50)
 }
-
+finch.setBeak(90, 0, 5)
+finch.setMove(MoveDir.Forward, 50, 800)
